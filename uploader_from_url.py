@@ -9,8 +9,6 @@ try:
 except ImportError:
     from urllib.parse import quote_plus
 
-oauth = 'AQAAAAALbYSXAAMeSouRP3eE_0ZFlHJ3L_mgU1A'
-
 def upload_from_url(url, token):
     # Getting file name from the url
     path = url.split('/')[-1]
@@ -27,6 +25,3 @@ def upload_from_url(url, token):
         print('Something went wrong: ' + r.status_code)
     else:
         print('OK')
-
-
-upload_from_url('https://pp.vk.me/c626624/v626624016/49977/i4wGEHWzF4o.jpg', oauth)
