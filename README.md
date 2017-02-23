@@ -6,6 +6,6 @@ To get started, you need to register your app [here](https://oauth.yandex.com/cl
 
 After that you need to obtain a token for yourself.
 
-To upload the file, call ```upload_from_url(url, path, token)```. *url* is source url, *path* is destination folder and *token* is your token.
+To upload the file, call ```upload_from_url(url, token, path=''):```. *url* is source url, *token* is your token and *path* is destination folder.
 
 This script works with both Python 2 and Python 3.
