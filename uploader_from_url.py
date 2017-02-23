@@ -9,8 +9,8 @@ try:
 except ImportError:
     from urllib.parse import quote_plus
 
-def upload_from_url(url, path, token):
-    if not path[-1] == '/':
+def upload_from_url(url, path='', token):
+    if path and not path[-1] == '/':
         path += '/'
     # Getting file name from the url
     path += url.split('/')[-1]
