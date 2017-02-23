@@ -14,7 +14,7 @@ def upload_from_url(url, path='', token):
         path += '/'
     # Getting file name from the url
     path += url.split('/')[-1]
-    # Converting names to the apropriate format
+    # Converting names to the appropriate format
     path, url = quote_plus(path), quote_plus(url)
     # Generating url for upload
     link = 'https://cloud-api.yandex.net:443/v1/disk/resources/upload?path={}&url={}'
